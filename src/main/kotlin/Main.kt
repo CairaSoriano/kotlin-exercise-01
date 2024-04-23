@@ -1,5 +1,6 @@
 fun factorialNumber( num: Int ): Int {
     var factorial: Int = 1
+
     for (x in 1..num) {
         factorial *= x
     }
@@ -9,6 +10,7 @@ fun factorialNumber( num: Int ): Int {
 
 fun primeNumber( num: Int ) {
     val modulo: Int = num % 2
+
     if(modulo == 1) {
         println("$num is prime")
     } else {
@@ -24,11 +26,13 @@ fun reverseString( word: String ): String {
 
 fun maximumElement( arr: List<Int> ): Int {
     var maxElement: Int = arr[0]
+
     for (x in arr.indices) {
         if (maxElement < arr[x]) {
             maxElement = arr[x]
         }
     }
+
     return maxElement
 }
 
@@ -66,10 +70,12 @@ fun isPalindrome( str: String ) {
 fun sumOfDigits ( digits: Int ): Int {
     var num = digits
     var sum = 0
+
     while (num != 0) {
         sum += num % 10
         num /= 10
     }
+
     return sum
 }
 
@@ -108,6 +114,7 @@ fun countVowels(input: String): Int {
 
 fun convertCelsiusToFahrenheit( celsiusTemp: Int): Double {
     val convertedTemp: Double = (celsiusTemp.toDouble() * 1.8) + 32
+
     return convertedTemp
 }
 
